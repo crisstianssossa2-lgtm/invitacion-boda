@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.invitation {
+    background: linear-gradient(to bottom, #fff9f5, #fffbf8);
+    border: 3px solid #d4af37;
+    border-radius: 15px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.decoration {
+    font-size: 24px;
+    color: #d4af37;
+    margin: 20px 0;
+    letter-spacing: 15px;
+}
+
+.header h1 {
+    font-size: 48px;
+    color: #764ba2;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.header .subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.couple-names {
+    margin: 40px 0;
+    border-top: 2px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+    padding: 30px 0;
+}
+
+.couple-names .name {
+    font-size: 28px;
+    color: #764ba2;
+    font-weight: bold;
+}
+
+.couple-names .and {
+    font-size: 24px;
+    color: #d4af37;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.details {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.detail-item h3 {
+    font-size: 20px;
+    color: #764ba2;
+    margin-bottom: 8px;
+}
+
+.detail-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.detail-item .time,
+.detail-item .address {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.rsvp {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border: 2px dashed #d4af37;
+}
+
+.rsvp h3 {
+    font-size: 20px;
+    color: #764ba2;
+    margin-bottom: 10px;
+}
+
+.rsvp p {
+    font-size: 14px;
+    color: #333;
+    margin: 8px 0;
+}
+
+.rsvp .contact {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.rsvp a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.rsvp a:hover {
+    color: #d4af37;
+}
+
+.message {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(118, 75, 162, 0.05);
+    border-left: 4px solid #d4af37;
+    border-radius: 5px;
+}
+
+.message p {
+    font-size: 16px;
+    color: #764ba2;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .invitation {
+        padding: 30px 20px;
+    }
+    
+    .header h1 {
+        font-size: 36px;
+    }
+    
+    .couple-names .name {
+        font-size: 22px;
+    }
+    
+    .details {
+        gap: 20px;
+    }
+}
